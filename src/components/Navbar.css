@@ -1,0 +1,18 @@
+/* Navbar.css */
+@media (max-width: 768px) {
+    .menuButton {
+        display: block;
+    }
+
+    .iconsContainer {
+        display: none;
+    }
+
+    .searchContainer {
+        display: block;
+    }
+
+    .mobileMenu {
+        display: block;
+    }
+}

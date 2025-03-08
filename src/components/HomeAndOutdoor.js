@@ -11,7 +11,7 @@ const HomeAndOutdoor = () => {
     },
     leftSection: {
       flex: "1",
-      backgroundImage: "url('/sofa-bg.jpg')",
+      backgroundImage: "url('/homeoutdoor.png')",
       backgroundSize: "cover",
       backgroundPosition: "center",
       padding: "20px",
@@ -61,28 +61,62 @@ const HomeAndOutdoor = () => {
   };
 
   const products = [
-    { name: "Soft chairs", price: "From USD 19", image: "chair.png" },
-    { name: "Sofa & chair", price: "From USD 19", image: "sofa.png" },
-    { name: "Kitchen dishes", price: "From USD 19", image: "dishes.png" },
-    { name: "Smart watches", price: "From USD 19", image: "watch.png" },
-    { name: "Kitchen mixer", price: "From USD 100", image: "mixer.png" },
-    { name: "Blenders", price: "From USD 39", image: "blender.png" },
-    { name: "Home appliance", price: "From USD 19", image: "appliance.png" },
-    { name: "Coffee maker", price: "From USD 10", image: "coffee.png" },
+    {
+      name: "Soft chairs",
+      price: "From USD 19",
+      image: "/homeoutdoor/chair.jpg",
+    },
+    {
+      name: "Sofa & chair",
+      price: "From USD 19",
+      image: "/homeoutdoor/sofa.jpg",
+    },
+    {
+      name: "Kitchen dishes",
+      price: "From USD 19",
+      image: "/homeoutdoor/dishes.jpg",
+    },
+    {
+      name: "Smart watches",
+      price: "From USD 19",
+      image: "/homeoutdoor/watch.jpg",
+    },
+    {
+      name: "Kitchen mixer",
+      price: "From USD 100",
+      image: "/homeoutdoor/mixer.jpg",
+    },
+    {
+      name: "Blenders",
+      price: "From USD 39",
+      image: "/homeoutdoor/blender.jpg",
+    },
+    {
+      name: "Home appliance",
+      price: "From USD 19",
+      image: "/homeoutdoor/appliance.jpg",
+    },
+    {
+      name: "Coffee maker",
+      price: "From USD 10",
+      image: "/homeoutdoor/coffee.jpg",
+    },
   ];
 
   return (
-    <div style={styles.container}>
+    <div className="container" style={styles.container}>
       {/* Left Section */}
-      <div style={styles.leftSection}>
+      <div className="leftSection" style={styles.leftSection}>
         <h2>Home and outdoor</h2>
-        <button style={styles.button}>Source now</button>
+        <button className="dispnone" style={styles.button}>
+          Source now
+        </button>
       </div>
 
       {/* Right Section - Products */}
-      <div style={styles.rightSection}>
+      <div className="rightSection" style={styles.rightSection}>
         {products.map((product, index) => (
-          <div key={index} style={styles.productCard}>
+          <div className="productCard" key={index} style={styles.productCard}>
             <img
               src={product.image}
               alt={product.name}
@@ -96,5 +130,55 @@ const HomeAndOutdoor = () => {
     </div>
   );
 };
+
+const mediaQueryStyles = `
+  @media (max-width: 768px) {
+  .container {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .leftSection {
+    flex-direction: column !important;
+    text-align: center;
+    background-image: none !important;
+    background-color: transparent !important;
+  }
+
+  .dispnone {
+    display: none !important;
+  }
+
+  .rightSection {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 5px;
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+  }
+
+  /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+  .rightSection::-webkit-scrollbar {
+    display: none;
+  }
+    .productCard {
+    flex: 0 0 auto; /* Prevents shrinking or wrapping */
+    width: 140px; /* Fixed width for each product */
+  }
+}
+
+`;
+
+// Inject styles into the document head
+const styleSheet = document.createElement("style");
+styleSheet.type = "text/css";
+styleSheet.innerText = mediaQueryStyles;
+document.head.appendChild(styleSheet);
 
 export default HomeAndOutdoor;
