@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import TopNavbar from "./components/TopNavbar";
+import CategorySidebar from "./components/CategorySidebar";
+import DealsAndOffers from "./components/DealsAndOffers";
+import HomeAndOutdoor from "./components/HomeAndOutdoor";
+import QuoteRequest from "./components/QuoteRequest";
+import RecommendedItems from "./components/RecommendedItems";
+import ExtraServices from "./components/ExtraServices";
+import SuppliersByRegion from "./components/SuppliersByRegion";
+import NewsletterSubscription from "./components/NewsletterSubscription";
+import Footer from "./components/Footer";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <TopNavbar />
+      <CategorySidebar />
+      <DealsAndOffers />
+      <HomeAndOutdoor />
+      <QuoteRequest />
+      <RecommendedItems />
+      <ExtraServices />
+      <SuppliersByRegion />
+      <NewsletterSubscription />
+      <Footer />
     </div>
   );
 }
