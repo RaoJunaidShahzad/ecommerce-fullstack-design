@@ -1,15 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import TopNavbar from "./components/TopNavbar";
-import CategorySidebar from "./components/CategorySidebar";
-import DealsAndOffers from "./components/DealsAndOffers";
-import HomeAndOutdoor from "./components/HomeAndOutdoor";
-import ElectronicAndGadget from "./components/ElectronicAndGadget";
-import QuoteRequest from "./components/QuoteRequest";
-import RecommendedItems from "./components/RecommendedItems";
-import ExtraServices from "./components/ExtraServices";
-import SuppliersByRegion from "./components/SuppliersByRegion";
-import NewsletterSubscription from "./components/NewsletterSubscription";
+import Main from "./components/Main";
 import Footer from "./components/Footer";
 import "./App.css";
 
@@ -18,15 +10,7 @@ function App() {
     <div className="App">
       <Navbar />
       <TopNavbar />
-      <CategorySidebar />
-      <DealsAndOffers />
-      <HomeAndOutdoor />
-      <ElectronicAndGadget />
-      <QuoteRequest />
-      <RecommendedItems />
-      <ExtraServices />
-      <SuppliersByRegion />
-      <NewsletterSubscription />
+      <Main />
       <Footer />
     </div>
   );
