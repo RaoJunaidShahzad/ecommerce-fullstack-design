@@ -42,7 +42,7 @@ const TopNavbar = () => {
 
 const styles = {
   navbar: {
-    width: "100%",
+    width: "94%",
     backgroundColor: "#fff",
     borderBottom: "2px solid rgb(226, 226, 226)",
     padding: "10px 10px",

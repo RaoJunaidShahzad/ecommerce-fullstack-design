@@ -34,11 +34,11 @@ const styles = {
     gap: "10px",
     marginTop: "10px",
   },
-  linksContainer: {
+  linksContainer1: {
     flex: "2",
     display: "flex",
     justifyContent: "space-around",
-    minWidth: "400px",
+    width: "400px",
   },
   linkSection: {
     textAlign: "left",
@@ -91,7 +91,7 @@ const Footer = () => {
         </div>
 
         {/* Navigation Links */}
-        <div style={styles.linksContainer}>
+        <div className="linksContainer1" style={styles.linksContainer1}>
           <div style={styles.linkSection}>
             <h4 style={styles.linkTitle}>About</h4>
             <ul style={styles.links}>
@@ -147,5 +147,19 @@ const Footer = () => {
     </footer>
   );
 };
+
+const mediaQueryStyles = `
+  @media (max-width: 768px) {
+    .linksContainer1 {
+       width:320px
+    }
+}
+`;
+
+// Inject styles into the document head
+const styleSheet = document.createElement("style");
+styleSheet.type = "text/css";
+styleSheet.innerText = mediaQueryStyles;
+document.head.appendChild(styleSheet);
 
 export default Footer;

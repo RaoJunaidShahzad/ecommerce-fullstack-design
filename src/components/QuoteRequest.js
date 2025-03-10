@@ -19,9 +19,9 @@ const QuoteRequest = () => {
       flex: "1",
       minWidth: "250px",
     },
-    rightSection: {
+    rightSection1: {
       flex: "1",
-      minWidth: "300px",
+      width: "300px",
       backgroundColor: "#fff",
       padding: "20px",
       borderRadius: "10px",
@@ -46,13 +46,19 @@ const QuoteRequest = () => {
       padding: "10px",
       border: "1px solid #ccc",
       borderRadius: "5px",
-      width: "100%",
+      width: "85%",
+    },
+    input1: {
+      padding: "10px",
+      border: "1px solid #ccc",
+      borderRadius: "5px",
+      width: "41%",
     },
     textarea: {
       padding: "10px",
       border: "1px solid #ccc",
       borderRadius: "5px",
-      width: "100%",
+      width: "85%",
       minHeight: "80px",
     },
     row: {
@@ -86,10 +92,11 @@ const QuoteRequest = () => {
       </div>
 
       {/* Right Section - Form */}
-      <div style={styles.rightSection}>
+      <div className="rightSection1" style={styles.rightSection1}>
         <h3>Send quote to suppliers</h3>
         <div style={styles.formGroup}>
           <input
+            className="inp"
             type="text"
             placeholder="What item you need?"
             style={styles.input}
@@ -99,8 +106,8 @@ const QuoteRequest = () => {
             style={styles.textarea}
           ></textarea>
           <div style={styles.row}>
-            <input type="number" placeholder="Quantity" style={styles.input} />
-            <select style={styles.input}>
+            <input type="number" placeholder="Quantity" style={styles.input1} />
+            <select style={styles.input1}>
               <option>Pcs</option>
               <option>Kg</option>
               <option>Box</option>
@@ -112,5 +119,25 @@ const QuoteRequest = () => {
     </div>
   );
 };
+
+const mediaQueryStyles = `
+  @media (max-width: 768px) {
+    .rightSection1 {
+        display: flex;
+        flex-direction: column;
+       padding: 10px;
+       width:240px
+    }
+    .inp{
+       width: 85%;
+    }
+}
+`;
+
+// Inject styles into the document head
+const styleSheet = document.createElement("style");
+styleSheet.type = "text/css";
+styleSheet.innerText = mediaQueryStyles;
+document.head.appendChild(styleSheet);
 
 export default QuoteRequest;
