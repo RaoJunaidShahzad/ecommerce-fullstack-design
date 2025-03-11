@@ -45,20 +45,65 @@ const styles = {
 };
 
 const products = [
-  { id: 1, name: "T-shirt for men", price: "$10.30", image: "/tshirt.jpg" },
-  { id: 2, name: "Jeans shorts blue", price: "$10.30", image: "/jeans.jpg" },
-  { id: 3, name: "Brown winter coat", price: "$12.50", image: "/coat.jpg" },
-  { id: 4, name: "Leather Wallet", price: "$99.00", image: "/wallet.jpg" },
-  { id: 5, name: "Headset for gaming", price: "$8.99", image: "/headset.jpg" },
-  { id: 6, name: "Jeans shorts blue", price: "$10.30", image: "/jeans.jpg" },
-  { id: 7, name: "Brown winter coat", price: "$12.50", image: "/coat.jpg" },
-  { id: 8, name: "Leather Wallet", price: "$99.00", image: "/wallet.jpg" },
-  { id: 9, name: "Headset for gaming", price: "$8.99", image: "/headset.jpg" },
+  {
+    id: 1,
+    name: "T-shirt for men",
+    price: "$10.30",
+    image: "/recommended/1.jpg",
+  },
+  {
+    id: 2,
+    name: "Jeans shorts blue",
+    price: "$10.30",
+    image: "/recommended/2.jpg",
+  },
+  {
+    id: 3,
+    name: "Brown winter coat",
+    price: "$12.50",
+    image: "/recommended/3.jpg",
+  },
+  {
+    id: 4,
+    name: "Leather Wallet",
+    price: "$99.00",
+    image: "/recommended/4.jpg",
+  },
+  {
+    id: 5,
+    name: "Headset for gaming",
+    price: "$8.99",
+    image: "/recommended/5.jpg",
+  },
+  {
+    id: 6,
+    name: "Jeans shorts blue",
+    price: "$10.30",
+    image: "/recommended/6.jpg",
+  },
+  {
+    id: 7,
+    name: "Brown winter coat",
+    price: "$12.50",
+    image: "/recommended/7.jpg",
+  },
+  {
+    id: 8,
+    name: "Leather Wallet",
+    price: "$99.00",
+    image: "/recommended/canoncamera.jpg",
+  },
+  {
+    id: 9,
+    name: "Headset for gaming",
+    price: "$8.99",
+    image: "/recommended/headphone.jpg",
+  },
   {
     id: 10,
     name: "Smartwatch silver",
     price: "$10.30",
-    image: "/smartwatch.jpg",
+    image: "/recommended/smartwatch.jpg",
   },
 ];
 

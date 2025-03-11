@@ -50,15 +50,24 @@ const styles = {
 };
 
 const suppliers = [
-  { country: "Arabic Emirates", domain: "shopname.ae", flag: "/flags/uae.png" },
-  { country: "Australia", domain: "shopname.ae", flag: "/flags/australia.png" },
-  { country: "United States", domain: "shopname.ae", flag: "/flags/usa.png" },
-  { country: "Russia", domain: "shopname.ru", flag: "/flags/russia.png" },
-  { country: "Italy", domain: "shopname.it", flag: "/flags/italy.png" },
-  { country: "Denmark", domain: "denmark.com.dk", flag: "/flags/denmark.png" },
-  { country: "France", domain: "shopname.com.fr", flag: "/flags/france.png" },
-  { country: "China", domain: "shopname.ae", flag: "/flags/china.png" },
-  { country: "Great Britain", domain: "shopname.co.uk", flag: "/flags/uk.png" },
+  {
+    country: "Arabic Emirates",
+    domain: "shopname.ae",
+    flag: "/flags/flag1.png",
+  },
+  { country: "Australia", domain: "shopname.ae", flag: "/flags/flag2.png" },
+  { country: "United States", domain: "shopname.ae", flag: "/flags/flag3.png" },
+  { country: "Russia", domain: "shopname.ru", flag: "/flags/flag4.png" },
+  { country: "Italy", domain: "shopname.it", flag: "/flags/flag5.png" },
+  { country: "Denmark", domain: "denmark.com.dk", flag: "/flags/flag6.png" },
+  { country: "France", domain: "shopname.com.fr", flag: "/flags/flag7.png" },
+  { country: "China", domain: "shopname.ae", flag: "/flags/flag8.png" },
+  { country: "China", domain: "shopname.ae", flag: "/flags/flag8.png" },
+  {
+    country: "Great Britain",
+    domain: "shopname.co.uk",
+    flag: "/flags/flag9.png",
+  },
 ];
 
 const SuppliersByRegion = () => {

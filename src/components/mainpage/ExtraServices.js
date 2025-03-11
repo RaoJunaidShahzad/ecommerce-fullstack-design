@@ -57,25 +57,25 @@ const services = [
   {
     id: 1,
     title: "Source from Industry Hubs",
-    image: "/industry.jpg",
+    image: "service/service1.png",
     icon: "🔍",
   },
   {
     id: 2,
     title: "Customize Your Products",
-    image: "/customize.jpg",
+    image: "service/service2.png",
     icon: "🗂️",
   },
   {
     id: 3,
     title: "Fast, reliable shipping by ocean or air",
-    image: "/shipping.jpg",
+    image: "service/service3.png",
     icon: "✈️",
   },
   {
     id: 4,
     title: "Product monitoring and inspection",
-    image: "/inspection.jpg",
+    image: "service/service4.png",
     icon: "🛡️",
   },
 ];
